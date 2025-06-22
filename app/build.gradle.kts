@@ -49,6 +49,8 @@ dependencies {
 // RecyclerView
     implementation (libs.androidx.recyclerview)
 
+    implementation (libs.material)
+
 
 
 // Glide for Image Loading (Optional)
@@ -56,7 +58,7 @@ dependencies {
     annotationProcessor (libs.github.compiler)
 
     implementation(libs.appcompat)
-    implementation(libs.material)
+
     implementation(libs.activity)
     implementation(libs.constraintlayout)
     testImplementation(libs.junit)

@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
+import com.google.android.material.appbar.MaterialToolbar;
 import com.surajvanshsv.quoteapps.databinding.ActivityFavoriteQuotesBinding;
 import com.surajvanshsv.quoteapps.ui.adapter.QuoteAdapter;
 import com.surajvanshsv.quoteapps.ui.viewmodel.FavoriteViewModel;
@@ -21,6 +22,8 @@ public class FavoriteQuotesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityFavoriteQuotesBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        MaterialToolbar toolbar = binding.topAppBar;
+        toolbar.setNavigationOnClickListener(v -> finish());
 
         adapter = new QuoteAdapter();
         viewModel = new ViewModelProvider(this).get(FavoriteViewModel.class);

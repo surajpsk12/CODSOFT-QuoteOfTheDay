@@ -12,88 +12,114 @@
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="16dp"
+        android:padding="24dp"
         android:background="?android:attr/windowBackground">
 
+        <!-- Quote Card in center -->
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/quoteCard"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
-            app:cardCornerRadius="16dp"
-            app:cardElevation="6dp"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="8dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="?attr/colorPrimary"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/btnFetch"
+            app:layout_constraintBottom_toTopOf="@+id/buttonGroup"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent">
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_chainStyle="packed">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="24dp">
+                android:padding="24dp"
+                android:gravity="center">
 
                 <TextView
                     android:id="@+id/tvQuote"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@{viewModel.quote.body}"
-                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textAppearance="@style/TextAppearance.Material3.HeadlineSmall"
                     android:textAlignment="center"
-                    android:textStyle="italic" />
+                    android:textStyle="italic"
+                    android:lineSpacingExtra="8dp" />
 
                 <TextView
                     android:id="@+id/tvAuthor"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="12dp"
+                    android:layout_marginTop="16dp"
                     android:text='@{"— " + viewModel.quote.author}'
-                    android:textAppearance="?attr/textAppearanceSubtitle2"
+                    android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
                     android:textAlignment="center" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
-        <Button
-            android:id="@+id/btnFetch"
-            android:layout_width="wrap_content"
+        <!-- Button group just below the card -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/buttonGroup"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:onClick="@{() -> viewModel.fetchQuote()}"
-            android:text="New Quote"
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            app:layout_constraintBottom_toTopOf="@+id/btnShare"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@id/quoteCard"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
 
-        <Button
-            android:id="@+id/btnShare"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
-            android:text="Share Quote"
-            app:layout_constraintBottom_toTopOf="@+id/btnFavorite"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            <!-- Row 1 -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnFetch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="New Quote"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btnShare"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.48"
+                app:cornerRadius="16dp" />
 
-        <Button
-            android:id="@+id/btnFavorite"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
-            android:text="Save to Favorites!"
-            app:layout_constraintBottom_toTopOf="@+id/btnFavoriteQuotes"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnShare"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Share"
+                app:layout_constraintStart_toEndOf="@id/btnFetch"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.48"
+                app:cornerRadius="16dp" />
 
-        <Button
-            android:id="@+id/btnFavoriteQuotes"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="View Favorites!️"
-            android:layout_marginBottom="12dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            <!-- Row 2 -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnFavorite"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:text="Save"
+                app:layout_constraintTop_toBottomOf="@id/btnFetch"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btnFavoriteQuotes"
+                app:layout_constraintWidth_percent="0.48"
+                app:cornerRadius="16dp" />
 
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnFavoriteQuotes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="8dp"
+                android:text="Favorites"
+                app:layout_constraintTop_toBottomOf="@id/btnShare"
+                app:layout_constraintStart_toEndOf="@id/btnFavorite"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintWidth_percent="0.48"
+                app:cornerRadius="16dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
