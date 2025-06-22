@@ -15,7 +15,6 @@
         android:padding="24dp"
         android:background="?android:attr/windowBackground">
 
-        <!-- Quote Card in center -->
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/quoteCard"
             android:layout_width="0dp"
@@ -58,7 +57,6 @@
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
-        <!-- Button group just below the card -->
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/buttonGroup"
             android:layout_width="0dp"
@@ -69,7 +67,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent">
 
-            <!-- Row 1 -->
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnFetch"
                 android:layout_width="0dp"
@@ -94,7 +91,6 @@
                 app:layout_constraintWidth_percent="0.48"
                 app:cornerRadius="16dp" />
 
-            <!-- Row 2 -->
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnFavorite"
                 android:layout_width="0dp"

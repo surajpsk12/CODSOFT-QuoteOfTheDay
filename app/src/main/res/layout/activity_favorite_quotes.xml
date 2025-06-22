@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
-        <!-- No ViewModel binding needed here -->
+
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout

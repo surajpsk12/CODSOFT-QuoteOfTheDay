@@ -58,6 +58,8 @@ dependencies {
     annotationProcessor (libs.github.compiler)
 
     implementation(libs.appcompat)
+    implementation (libs.androidx.core.splashscreen)
+
 
     implementation(libs.activity)
     implementation(libs.constraintlayout)

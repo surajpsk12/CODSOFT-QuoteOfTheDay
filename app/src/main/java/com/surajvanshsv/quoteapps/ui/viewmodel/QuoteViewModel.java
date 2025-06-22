@@ -63,7 +63,6 @@ public class QuoteViewModel extends AndroidViewModel {
         });
     }
 
-    // ✅ Insert into Room Database
     public void insertQuote(Quote quote) {
         repository.insert(quote);
     }

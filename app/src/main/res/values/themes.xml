@@ -14,4 +14,9 @@
         <item name="shapeAppearanceLargeComponent">@style/Shape.Large</item>
         <item name="textAppearanceHeadline6">@style/Typography.Headline</item>
     </style>
+    <style name="Theme.Quoteapps.Splash" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+
 </resources>
