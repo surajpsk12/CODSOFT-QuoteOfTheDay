@@ -75,7 +75,7 @@ To use this API:
 
 1. Clone this repo
 
-   git clone https://github.com/yourusername/QuoteApp.git
+   git clone https://github.com/surajpsk12/QuoteApp.git
 
 2. Open in Android Studio
 
