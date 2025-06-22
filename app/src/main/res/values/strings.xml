@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">quoteapps</string>
+    <string name="app_name">Quote App</string>
+    <string name="QuoteApp">Quote of the Day\n</string>
 </resources>
