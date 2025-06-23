@@ -4,6 +4,7 @@ import android.Manifest;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -21,6 +22,7 @@ import com.surajvanshsv.quoteapps.data.db.QuoteDatabase;
 import com.surajvanshsv.quoteapps.model.Quote;
 import com.surajvanshsv.quoteapps.model.QuoteResponse;
 import com.surajvanshsv.quoteapps.ui.view.MainActivity;
+import com.surajvanshsv.quoteapps.ui.widget.QuoteWidgetProvider;
 
 import java.io.IOException;
 
@@ -30,6 +32,8 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.http.GET;
 import retrofit2.http.Headers;
+
+import android.appwidget.AppWidgetManager;
 
 public class QuoteWorker extends Worker {
 
@@ -44,7 +48,7 @@ public class QuoteWorker extends Worker {
     @Override
     public Result doWork() {
         try {
-            // 1️⃣ API Call
+            // 1️⃣ Fetch Quote from API
             QuoteApi api = new Retrofit.Builder()
                     .baseUrl("https://favqs.com/api/")
                     .addConverterFactory(GsonConverterFactory.create())
@@ -57,9 +61,15 @@ public class QuoteWorker extends Worker {
 
                 // 2️⃣ Save to Room DB
                 QuoteDatabase db = QuoteDatabase.getInstance(getApplicationContext());
-                db.quoteDao().insert(quote); // safe inside Worker
+                db.quoteDao().insert(quote);
 
-                // 3️⃣ Show Notification
+                // 3️⃣ Save to SharedPreferences (for widget)
+                QuoteStorage.saveQuote(getApplicationContext(), quote);
+
+                // 4️⃣ Trigger widget update
+                triggerWidgetUpdate();
+
+                // 5️⃣ Show notification
                 showNotification(quote);
 
                 return Result.success();
@@ -70,6 +80,19 @@ public class QuoteWorker extends Worker {
             e.printStackTrace();
             return Result.failure();
         }
+    }
+
+    private void triggerWidgetUpdate() {
+        Context context = getApplicationContext();
+        Intent intent = new Intent(context, QuoteWidgetProvider.class);
+        intent.setAction(AppWidgetManager.ACTION_APPWIDGET_UPDATE);
+
+        AppWidgetManager appWidgetManager = AppWidgetManager.getInstance(context);
+        ComponentName componentName = new ComponentName(context, QuoteWidgetProvider.class);
+        int[] appWidgetIds = appWidgetManager.getAppWidgetIds(componentName);
+
+        intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_IDS, appWidgetIds);
+        context.sendBroadcast(intent);
     }
 
     private void showNotification(Quote quote) {
@@ -115,9 +138,8 @@ public class QuoteWorker extends Worker {
         }
     }
 
-    // 🔐 Retrofit interface
     interface QuoteApi {
-        @Headers("Authorization: Token token=YOUR_FAVQS_API_KEY") // Replace with your API key
+        @Headers("Authorization: Token token=YOUR_FAVQS_API_KEY") // Replace this
         @GET("qotd")
         Call<QuoteResponse> getQuote();
     }

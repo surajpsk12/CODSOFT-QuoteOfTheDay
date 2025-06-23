@@ -55,6 +55,8 @@ dependencies {
     implementation (libs.androidx.work.runtime)
 
 
+    implementation (libs.androidx.glance.appwidget)
+
 // Glide for Image Loading (Optional)
     implementation (libs.github.glide)
     annotationProcessor (libs.github.compiler)

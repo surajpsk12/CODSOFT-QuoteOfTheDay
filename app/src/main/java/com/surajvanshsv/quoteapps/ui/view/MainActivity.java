@@ -26,6 +26,7 @@ import com.surajvanshsv.quoteapps.R;
 import com.surajvanshsv.quoteapps.databinding.ActivityMainBinding;
 import com.surajvanshsv.quoteapps.model.Quote;
 import com.surajvanshsv.quoteapps.ui.viewmodel.QuoteViewModel;
+import com.surajvanshsv.quoteapps.utils.QuoteWorkScheduler;
 import com.surajvanshsv.quoteapps.utils.QuoteWorker;
 
 import java.util.Calendar;
@@ -104,6 +105,7 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, CategorySelectionActivity.class);
             startActivity(intent);
         });
+        QuoteWorkScheduler.scheduleDailyQuote(this);
 
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
