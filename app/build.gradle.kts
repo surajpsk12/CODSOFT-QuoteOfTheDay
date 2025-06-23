@@ -41,6 +41,7 @@ dependencies {
 
 // Lifecycle (ViewModel + LiveData)
     implementation (libs.androidx.lifecycle.extensions)
+    implementation (libs.gson)
 
 // Room Database
     implementation (libs.androidx.room.runtime)
@@ -51,6 +52,7 @@ dependencies {
 
     implementation (libs.material)
 
+    implementation (libs.androidx.work.runtime)
 
 
 // Glide for Image Loading (Optional)
