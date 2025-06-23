@@ -23,6 +23,15 @@ public class QuoteAdapter extends RecyclerView.Adapter<QuoteAdapter.QuoteViewHol
         notifyDataSetChanged();
     }
 
+    public Quote getQuoteAt(int position) {
+        return quoteList.get(position);
+    }
+
+    public void removeQuoteAt(int position) {
+        quoteList.remove(position);
+        notifyItemRemoved(position);
+    }
+
     @NonNull
     @Override
     public QuoteViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {

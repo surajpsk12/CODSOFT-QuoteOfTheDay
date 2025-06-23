@@ -25,4 +25,12 @@ public class FavoriteViewModel extends AndroidViewModel {
     public LiveData<List<Quote>> getAllQuotes() {
         return allQuotes;
     }
+
+    public void insertQuote(Quote quote) {
+        repository.insert(quote);
+    }
+
+    public void deleteQuote(Quote quote) {
+        repository.delete(quote);
+    }
 }
