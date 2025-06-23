@@ -52,6 +52,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        binding.btnFetch.setOnClickListener(v -> {
+            viewModel.fetchQuote();
+        });
+
+
         binding.btnFavorite.setOnClickListener(v -> {
             Quote quote = viewModel.getQuote().getValue();
             if (quote != null) {
