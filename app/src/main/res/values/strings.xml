@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">Quote App</string>
-    <string name="QuoteApp">Quote of the Day\n</string>
+    <string name="QuoteApp">Quote of the Day&#10;</string>
 </resources>

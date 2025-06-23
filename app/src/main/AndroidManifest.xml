@@ -29,6 +29,7 @@
         <activity android:name=".ui.view.MainActivity" />
 
         <activity android:name=".ui.view.FavoriteQuotesActivity" />
+        <activity android:name=".ui.view.CategorySelectionActivity" />
 
     </application>
 
