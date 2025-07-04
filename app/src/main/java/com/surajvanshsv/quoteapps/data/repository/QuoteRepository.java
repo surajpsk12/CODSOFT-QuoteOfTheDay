@@ -32,6 +32,10 @@ public class QuoteRepository {
         executor.execute(() -> quoteDao.delete(quote));
     }
 
+    public void deleteAll() {
+        executor.execute(quoteDao::deleteAll);
+    }
+
     public LiveData<List<Quote>> getAllQuotes() {
         return allQuotes;
     }

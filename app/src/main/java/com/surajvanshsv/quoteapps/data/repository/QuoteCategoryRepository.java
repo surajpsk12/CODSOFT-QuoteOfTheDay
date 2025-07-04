@@ -32,7 +32,7 @@ public class QuoteCategoryRepository {
     public LiveData<List<Quote>> getQuotesByTag(String tag) {
         MutableLiveData<List<Quote>> liveData = new MutableLiveData<>();
 
-        apiService.getQuotesByTag(API_KEY, tag, "tag", 1).enqueue(new Callback<QuoteListResponse>() {
+        apiService.getQuotesByTag( tag, "tag", 1).enqueue(new Callback<QuoteListResponse>() {
             @Override
             public void onResponse(Call<QuoteListResponse> call, Response<QuoteListResponse> response) {
                 if (response.isSuccessful() && response.body() != null) {

@@ -19,6 +19,9 @@ public interface QuoteDao {
     @Delete
     void delete(Quote quote);
 
+    @Query("DELETE FROM favorite_quotes")
+    void deleteAll();
+
     @Query("SELECT * FROM favorite_quotes ORDER BY id DESC")
     LiveData<List<Quote>> getAllQuotes();
 }

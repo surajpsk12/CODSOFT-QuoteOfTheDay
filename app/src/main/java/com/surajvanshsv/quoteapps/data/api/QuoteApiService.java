@@ -19,8 +19,9 @@ public interface QuoteApiService {
     @Headers("Authorization: Token token=36dae93c27213f74a22287d45ce032aa")
     @GET("quotes/")
     Call<QuoteListResponse> getQuotesByTag(
-            @Query("filter") String tag,     // Example: "life", "inspirational"
-            @Query("type") String type,      // Usually: "tag"
-            String s, @Query("page") int page          // For pagination, start with 1
+            @Query("filter") String tag,
+            @Query("type") String type,
+            @Query("page") int page
     );
+
 }
