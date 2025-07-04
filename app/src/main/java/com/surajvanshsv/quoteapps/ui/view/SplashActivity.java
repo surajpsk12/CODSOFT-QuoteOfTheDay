@@ -25,7 +25,7 @@ public class SplashActivity extends AppCompatActivity {
         TextView appName = findViewById(R.id.appName);
 
         Animation fadeIn = new AlphaAnimation(0, 1);
-        fadeIn.setDuration(1000);
+        fadeIn.setDuration(500);
         fadeIn.setFillAfter(true);
 
         logoImage.startAnimation(fadeIn);

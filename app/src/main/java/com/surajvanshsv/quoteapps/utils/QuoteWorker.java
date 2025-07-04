@@ -98,29 +98,47 @@ public class QuoteWorker extends Worker {
     private void showNotification(Quote quote) {
         createNotificationChannel();
 
-        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        Context context = getApplicationContext();
+
+        // Intent to open app on tap
+        Intent intent = new Intent(context, MainActivity.class);
         PendingIntent pendingIntent = PendingIntent.getActivity(
-                getApplicationContext(), 0, intent,
+                context, 0, intent,
+                PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE
+        );
+
+        // Intent for Save to Favorites action
+        Intent saveIntent = new Intent(context, SaveQuoteReceiver.class);
+        saveIntent.putExtra(SaveQuoteReceiver.EXTRA_QUOTE_BODY, quote.getBody());
+        saveIntent.putExtra(SaveQuoteReceiver.EXTRA_QUOTE_AUTHOR, quote.getAuthor());
+        PendingIntent savePendingIntent = PendingIntent.getBroadcast(
+                context, 1, saveIntent,
                 PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE
         );
 
         String content = "\"" + quote.getBody() + "\"\n— " + quote.getAuthor();
 
-        NotificationCompat.Builder builder = new NotificationCompat.Builder(getApplicationContext(), CHANNEL_ID)
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(context, CHANNEL_ID)
                 .setSmallIcon(R.mipmap.ic_launcher_foreground)
                 .setContentTitle("Quote of the Day")
                 .setContentText(quote.getBody())
                 .setStyle(new NotificationCompat.BigTextStyle().bigText(content))
                 .setContentIntent(pendingIntent)
                 .setAutoCancel(true)
-                .setPriority(NotificationCompat.PRIORITY_HIGH);
+                .setPriority(NotificationCompat.PRIORITY_HIGH)
+                // Add Save to Favorites button in notification
+                .addAction(
+                        R.drawable.ic_favorite, // Use your favorite icon here
+                        "Save to Favorites",
+                        savePendingIntent
+                );
 
-        if (ActivityCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.POST_NOTIFICATIONS)
+        if (ActivityCompat.checkSelfPermission(context, Manifest.permission.POST_NOTIFICATIONS)
                 != PackageManager.PERMISSION_GRANTED && Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             return;
         }
 
-        NotificationManagerCompat.from(getApplicationContext()).notify(NOTIFICATION_ID, builder.build());
+        NotificationManagerCompat.from(context).notify(NOTIFICATION_ID, builder.build());
     }
 
     private void createNotificationChannel() {
