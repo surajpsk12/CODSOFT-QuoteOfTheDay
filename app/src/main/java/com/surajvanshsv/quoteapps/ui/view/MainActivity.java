@@ -8,8 +8,8 @@ import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
-import androidx.lifecycle.ViewModelProvider;
 import androidx.databinding.DataBindingUtil;
+import androidx.lifecycle.ViewModelProvider;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.surajvanshsv.quoteapps.R;
@@ -20,10 +20,14 @@ import com.surajvanshsv.quoteapps.utils.QuoteImageHelper;
 import com.surajvanshsv.quoteapps.utils.QuoteStorageHelper;
 import com.surajvanshsv.quoteapps.utils.QuoteWorkScheduler;
 
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
 public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
     private QuoteViewModel viewModel;
+    private final ExecutorService executor = Executors.newSingleThreadExecutor();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,13 +69,33 @@ public class MainActivity extends AppCompatActivity {
         });
 
         binding.btnFavoriteQuotes.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, FavoriteQuotesActivity.class);
-            startActivity(intent);
+            startActivity(new Intent(MainActivity.this, FavoriteQuotesActivity.class));
         });
 
         binding.btnCategories.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, CategoryQuotesActivity.class);
-            startActivity(intent);
+            startActivity(new Intent(MainActivity.this, CategoryQuotesActivity.class));
+        });
+
+        // 🟢 Download button functionality (instead of reel)
+        binding.btnDownload.setOnClickListener(v -> {
+            Quote quote = viewModel.getQuote().getValue();
+            if (quote != null) {
+                Snackbar.make(binding.getRoot(), "Saving image, please wait...", Snackbar.LENGTH_SHORT).show();
+                executor.execute(() -> {
+                    Bitmap bitmap = QuoteImageHelper.createQuoteShareImage(this, quote);
+                    String fileName = "quote_" + System.currentTimeMillis() + ".png";
+                    boolean saved = QuoteImageHelper.saveImageToGallery(this, bitmap, fileName);
+                    runOnUiThread(() -> {
+                        if (saved) {
+                            Snackbar.make(binding.getRoot(), "Image saved to gallery ✅", Snackbar.LENGTH_SHORT).show();
+                        } else {
+                            Snackbar.make(binding.getRoot(), "Failed to save image", Snackbar.LENGTH_SHORT).show();
+                        }
+                    });
+                });
+            } else {
+                Snackbar.make(binding.getRoot(), "No quote loaded", Snackbar.LENGTH_SHORT).show();
+            }
         });
 
         // Load last quote from SharedPreferences if available
@@ -82,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-        // Schedule quote workers and notification worker
+        // Schedule quote workers
         QuoteWorkScheduler.scheduleDailyQuotes(this);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
@@ -90,5 +114,11 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        executor.shutdown();
     }
 }

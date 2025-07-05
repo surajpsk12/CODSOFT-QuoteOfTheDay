@@ -1,5 +1,6 @@
 package com.surajvanshsv.quoteapps.utils;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -9,17 +10,21 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Typeface;
+import android.media.MediaScannerConnection;
 import android.net.Uri;
+import android.os.Build;
+import android.os.Environment;
+import android.provider.MediaStore;
 import android.widget.Toast;
 
 import androidx.core.content.FileProvider;
 
-import com.surajvanshsv.quoteapps.R;
 import com.surajvanshsv.quoteapps.model.Quote;
 
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.OutputStream;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -28,7 +33,6 @@ import java.util.Locale;
 
 public class QuoteImageHelper {
 
-    // Creates the quote image exactly like in MainActivity
     public static Bitmap createQuoteShareImage(Context context, Quote quote) {
         int width = 1080;
         int height = 1920;
@@ -93,7 +97,41 @@ public class QuoteImageHelper {
         return bitmap;
     }
 
-    // Shares the bitmap image by creating file, uri, and intent
+    public static boolean saveImageToGallery(Context context, Bitmap bitmap, String filename) {
+        OutputStream fos;
+        try {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+                // Android 10+
+                ContentValues values = new ContentValues();
+                values.put(MediaStore.Images.Media.DISPLAY_NAME, filename);
+                values.put(MediaStore.Images.Media.MIME_TYPE, "image/png");
+                values.put(MediaStore.Images.Media.RELATIVE_PATH, Environment.DIRECTORY_PICTURES + "/Quotes");
+
+                Uri uri = context.getContentResolver().insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, values);
+                if (uri == null) return false;
+
+                fos = context.getContentResolver().openOutputStream(uri);
+            } else {
+                // Android 9 and below
+                File imagesDir = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES), "Quotes");
+                if (!imagesDir.exists()) imagesDir.mkdirs();
+                File imageFile = new File(imagesDir, filename);
+                fos = new FileOutputStream(imageFile);
+
+                // scan so gallery can see
+                MediaScannerConnection.scanFile(context, new String[]{imageFile.getAbsolutePath()}, null, null);
+            }
+
+            bitmap.compress(Bitmap.CompressFormat.PNG, 100, fos);
+            fos.close();
+            return true;
+
+        } catch (IOException e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
     public static void shareImage(Context context, Bitmap bitmap) {
         try {
             File cachePath = new File(context.getCacheDir(), "images");
