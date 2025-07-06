@@ -37,50 +37,91 @@ public class QuoteImageHelper {
         int width = 1080;
         int height = 1920;
 
-        Bitmap background;
+        Bitmap background = null;
+        boolean isDark = true; // default fallback
+
         try {
-            background = BitmapFactory.decodeStream(context.getAssets().open("backgrounds/clean wallpaper.jpg"));
+            // list all backgrounds in assets
+            String[] backgrounds = context.getAssets().list("backgrounds");
+            if (backgrounds != null && backgrounds.length > 0) {
+                int randomIndex = (int) (Math.random() * backgrounds.length);
+                String randomBackground = backgrounds[randomIndex];
+
+                // load selected background
+                background = BitmapFactory.decodeStream(
+                        context.getAssets().open("backgrounds/" + randomBackground)
+                );
+
+                // check naming rule
+                if (randomBackground.startsWith("light_")) {
+                    isDark = false;
+                }
+            }
         } catch (IOException e) {
             e.printStackTrace();
+        }
+
+        if (background == null) {
             background = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
             Canvas tempCanvas = new Canvas(background);
-            tempCanvas.drawColor(Color.parseColor("#001F54"));
+            tempCanvas.drawColor(Color.parseColor("#001F54")); // fallback color
         }
 
         Bitmap scaledBackground = Bitmap.createScaledBitmap(background, width, height, true);
         Bitmap bitmap = scaledBackground.copy(Bitmap.Config.ARGB_8888, true);
         Canvas canvas = new Canvas(bitmap);
 
+        // choose text colors based on background type
+        int quoteColor = isDark ? Color.WHITE : Color.BLACK;
+        int authorColor = isDark ? Color.LTGRAY : Color.DKGRAY;
+        int vanshColor = isDark ? Color.LTGRAY : Color.DKGRAY;
+        int titleColor = isDark ? Color.LTGRAY : Color.DKGRAY;
+
+        // Paint for main quote
         Paint quotePaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        quotePaint.setColor(Color.WHITE);
+        quotePaint.setColor(quoteColor);
         quotePaint.setTextSize(80);
         quotePaint.setTextAlign(Paint.Align.CENTER);
         Typeface quoteTypeface = Typeface.createFromAsset(context.getAssets(), "fonts/PlayfairDisplay-Italic.ttf");
         quotePaint.setTypeface(quoteTypeface);
         quotePaint.setShadowLayer(6, 2, 2, Color.BLACK);
 
+        // Paint for author
         Paint authorPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        authorPaint.setColor(Color.LTGRAY);
+        authorPaint.setColor(authorColor);
         authorPaint.setTextSize(55);
         authorPaint.setTextAlign(Paint.Align.CENTER);
         authorPaint.setTypeface(Typeface.create(Typeface.SERIF, Typeface.BOLD_ITALIC));
         authorPaint.setShadowLayer(4, 2, 2, Color.BLACK);
 
+        // Paint for Vansh + date
         Paint vanshPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        vanshPaint.setColor(Color.LTGRAY);
+        vanshPaint.setColor(vanshColor);
         vanshPaint.setTextSize(40);
         vanshPaint.setTextAlign(Paint.Align.CENTER);
         vanshPaint.setTypeface(Typeface.create(Typeface.SANS_SERIF, Typeface.BOLD));
         vanshPaint.setShadowLayer(4, 2, 2, Color.BLACK);
 
+        // Paint for "Quote of the Day"
+        Paint titlePaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        titlePaint.setColor(titleColor);
+        titlePaint.setTextSize(60);
+        titlePaint.setTextAlign(Paint.Align.CENTER);
+        titlePaint.setTypeface(Typeface.create(Typeface.DEFAULT_BOLD, Typeface.BOLD));
+        titlePaint.setShadowLayer(4, 2, 2, Color.BLACK);
+
         int xPos = width / 2;
         int padding = 80;
 
+        // draw "Quote of the Day"
+        canvas.drawText("| Quote of the Day |", xPos, 200, titlePaint);
+
+        // draw main quote
         String quotedText = "“" + quote.getBody() + "”";
         String[] quoteLines = splitTextIntoLines(quotedText, quotePaint, width - 2 * padding);
 
         float totalTextHeight = quoteLines.length * (quotePaint.getTextSize() + 20);
-        int yPos = (int) ((height / 2) - (totalTextHeight / 2));
+        int yPos = (int) ((height / 2) - (totalTextHeight / 2)) + 80; // shifted to avoid title
 
         for (String line : quoteLines) {
             canvas.drawText(line, xPos, yPos, quotePaint);
@@ -101,7 +142,6 @@ public class QuoteImageHelper {
         OutputStream fos;
         try {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-                // Android 10+
                 ContentValues values = new ContentValues();
                 values.put(MediaStore.Images.Media.DISPLAY_NAME, filename);
                 values.put(MediaStore.Images.Media.MIME_TYPE, "image/png");
@@ -112,13 +152,10 @@ public class QuoteImageHelper {
 
                 fos = context.getContentResolver().openOutputStream(uri);
             } else {
-                // Android 9 and below
                 File imagesDir = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES), "Quotes");
                 if (!imagesDir.exists()) imagesDir.mkdirs();
                 File imageFile = new File(imagesDir, filename);
                 fos = new FileOutputStream(imageFile);
-
-                // scan so gallery can see
                 MediaScannerConnection.scanFile(context, new String[]{imageFile.getAbsolutePath()}, null, null);
             }
 
