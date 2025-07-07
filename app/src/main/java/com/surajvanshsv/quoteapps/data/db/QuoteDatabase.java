@@ -7,13 +7,15 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
 import com.surajvanshsv.quoteapps.model.Quote;
+import com.surajvanshsv.quoteapps.model.FavoriteQuote; // ✅ Add import
 
-@Database(entities = {Quote.class}, version = 1, exportSchema = false)
+@Database(entities = {Quote.class, FavoriteQuote.class}, version = 4, exportSchema = false) // ✅ Add FavoriteQuote
 public abstract class QuoteDatabase extends RoomDatabase {
 
     private static QuoteDatabase instance;
 
     public abstract QuoteDao quoteDao();
+    public abstract com.surajvanshsv.quoteapps.data.db.FavoriteQuoteDao favoriteQuoteDao(); // ✅ Add DAO
 
     public static synchronized QuoteDatabase getInstance(Context context) {
         if (instance == null) {

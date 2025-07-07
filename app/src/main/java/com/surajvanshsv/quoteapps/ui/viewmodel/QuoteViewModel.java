@@ -14,6 +14,7 @@ import com.surajvanshsv.quoteapps.model.QuoteResponse;
 import com.surajvanshsv.quoteapps.utils.QuoteStorageHelper;
 
 import java.util.List;
+import java.util.Random;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -28,16 +29,23 @@ public class QuoteViewModel extends AndroidViewModel {
     private final QuoteRepository repository;
     private final LiveData<List<Quote>> allQuotes;
 
+    // 🔁 All Hindi quotes stored in Room
+    private final LiveData<List<Quote>> allHindiQuotes;
+
+    // 🔄 Track language mode
+    private String languageMode = "english"; // Default
+
     public QuoteViewModel(@NonNull Application application) {
         super(application);
         repository = new QuoteRepository(application);
         allQuotes = repository.getAllQuotes();
+        allHindiQuotes = repository.getHindiQuotes(); // Room DB
     }
 
-    // ✅ API Quote
     public LiveData<Quote> getQuote() {
         return quoteLiveData;
     }
+
     public void setQuote(Quote quote) {
         quoteLiveData.setValue(quote);
     }
@@ -50,17 +58,50 @@ public class QuoteViewModel extends AndroidViewModel {
         return error;
     }
 
+    public LiveData<List<Quote>> getAllQuotes() {
+        return allQuotes;
+    }
+
+    // ✅ Set language mode: "english" or "hindi"
+    public void setLanguageMode(String lang) {
+        languageMode = lang;
+    }
+
+    // 🚀 Core method to load a new quote (API or Room based on language)
     public void fetchQuote() {
+        if ("hindi".equals(languageMode)) {
+            fetchRandomHindiQuote();
+        } else {
+            fetchEnglishQuoteFromApi();
+        }
+    }
+
+    // 🔁 Load Hindi quote from Room DB
+    private void fetchRandomHindiQuote() {
         isLoading.setValue(true);
 
+        allHindiQuotes.observeForever(hindiList -> {
+            isLoading.setValue(false);
+            if (hindiList != null && !hindiList.isEmpty()) {
+                int randomIndex = new Random().nextInt(hindiList.size());
+                quoteLiveData.setValue(hindiList.get(randomIndex));
+            } else {
+                error.setValue("No Hindi quotes found in database.");
+            }
+        });
+    }
+
+    // 🌐 API call for English quote
+    private void fetchEnglishQuoteFromApi() {
+        isLoading.setValue(true);
         RetrofitClient.getInstance().getQuoteOfTheDay().enqueue(new Callback<QuoteResponse>() {
             @Override
             public void onResponse(Call<QuoteResponse> call, Response<QuoteResponse> response) {
                 isLoading.setValue(false);
                 if (response.isSuccessful() && response.body() != null) {
-                    quoteLiveData.setValue(response.body().getQuote());
-                    QuoteStorageHelper.saveLastQuote(getApplication(), response.body().getQuote());
-
+                    Quote quote = response.body().getQuote();
+                    quoteLiveData.setValue(quote);
+                    QuoteStorageHelper.saveLastQuote(getApplication(), quote);
                 } else {
                     error.setValue("Failed to load quote.");
                 }
@@ -85,9 +126,5 @@ public class QuoteViewModel extends AndroidViewModel {
 
     public void deleteAllQuotes() {
         repository.deleteAll();
-    }
-
-    public LiveData<List<Quote>> getAllQuotes() {
-        return allQuotes;
     }
 }

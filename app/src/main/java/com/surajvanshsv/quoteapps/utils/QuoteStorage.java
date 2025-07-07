@@ -22,6 +22,6 @@ public class QuoteStorage {
         SharedPreferences prefs = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
         String body = prefs.getString(KEY_BODY, "No quote found");
         String author = prefs.getString(KEY_AUTHOR, "Unknown");
-        return new Quote(body, author);
+        return new Quote(body, author, "english", "general");
     }
 }

@@ -20,7 +20,8 @@ public class SaveQuoteReceiver extends BroadcastReceiver {
         String author = intent.getStringExtra(EXTRA_QUOTE_AUTHOR);
 
         if (body != null && author != null) {
-            Quote quote = new Quote(body, author);
+            // ✅ Use the correct 4-argument constructor for Quote
+            Quote quote = new Quote(body.trim(), author.trim(), "english", "general");
 
             // Insert quote in background thread
             Executors.newSingleThreadExecutor().execute(() -> {

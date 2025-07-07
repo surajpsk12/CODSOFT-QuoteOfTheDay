@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
-
+        <!-- No variables needed -->
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -11,23 +11,53 @@
         android:layout_height="match_parent"
         android:background="?android:attr/windowBackground">
 
+        <!-- Top App Bar -->
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/topAppBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="?attr/colorPrimary"
+            android:title="Saved Quotes"
             android:titleTextColor="@android:color/white"
-            app:title="Saved Quotes"
-            app:navigationIcon="@drawable/ic_arrow_back"
-            app:layout_scrollFlags="scroll|enterAlways" />
+            app:navigationIcon="@drawable/ic_arrow_back" />
 
+        <!-- Language Toggle Buttons (Match MainActivity style) -->
+        <LinearLayout
+            android:id="@+id/languageSwitchLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="12dp"
+            android:layout_marginTop="?attr/actionBarSize">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEnglish"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="English"
+                app:cornerRadius="16dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnHindi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="हिंदी"
+                app:cornerRadius="16dp" />
+        </LinearLayout>
+
+        <!-- RecyclerView for favorite quotes -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerFavorites"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginTop="112dp"
             android:padding="16dp"
             android:clipToPadding="false"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior"
-            android:layout_marginTop="?attr/actionBarSize" />
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </layout>

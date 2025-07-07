@@ -39,4 +39,19 @@ public class QuoteRepository {
     public LiveData<List<Quote>> getAllQuotes() {
         return allQuotes;
     }
+
+    // ✅ Live Hindi quotes (e.g., for Favorite screen)
+    public LiveData<List<Quote>> getHindiQuotes() {
+        return quoteDao.getQuotesByLanguage("hindi");
+    }
+
+    // ✅ Blocking method for random Hindi quote (used in MainActivity)
+    public List<Quote> getQuotesByLanguageBlocking(String lang) {
+        return quoteDao.getQuotesByLanguageBlocking(lang);
+    }
+
+    // Optional: expose DAO for custom use
+    public QuoteDao getQuoteDao() {
+        return quoteDao;
+    }
 }

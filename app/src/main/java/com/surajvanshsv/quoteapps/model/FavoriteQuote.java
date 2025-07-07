@@ -2,38 +2,50 @@ package com.surajvanshsv.quoteapps.model;
 
 import androidx.annotation.NonNull;
 import androidx.room.Entity;
-import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
-import com.google.gson.annotations.SerializedName;
+@Entity(tableName = "favorite_quotes")
+public class FavoriteQuote {
 
-import java.util.List;
-
-@Entity(tableName = "quotes")
-public class Quote {
     @PrimaryKey(autoGenerate = true)
     private int id;
 
     private String body;
     private String author;
 
-    // 👇 Add this field for language (new)
     @NonNull
-    private String language = "english"; // default if not set
+    private String language = "english"; // default fallback
 
     private String emotion;
 
-    public Quote(String body, String author, String language, String emotion) {
+    public FavoriteQuote(String body, String author, String language, String emotion) {
         this.body = body;
         this.author = author;
-        this.language = (language != null) ? language : "english";
+        this.language = (language != null && !language.isEmpty()) ? language : "english";
         this.emotion = emotion;
     }
 
-    // ✅ Add empty constructor for Room if needed
-    public Quote() {}
+    public FavoriteQuote() {}
 
-    // 🔻 Getters and setters
+    // ✅ Convert this FavoriteQuote into a regular Quote object
+    public Quote toQuote() {
+        Quote quote = new Quote(body, author, language, emotion);
+        quote.setId(id); // preserve ID
+        return quote;
+    }
+
+    // ✅ Static method to convert from Quote to FavoriteQuote
+    public static FavoriteQuote fromQuote(Quote quote) {
+        FavoriteQuote fav = new FavoriteQuote(
+                quote.getBody(),
+                quote.getAuthor(),
+                quote.getLanguage(),
+                quote.getEmotion()
+        );
+        return fav;
+    }
+
+    // 🔻 Getters and Setters
     public int getId() { return id; }
     public void setId(int id) { this.id = id; }
 

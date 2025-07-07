@@ -1,0 +1,2671 @@
+{
+  "quotes": [
+    {
+      "id": 1,
+      "body": "मोहब्बत में कभी हार नहीं होती।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "love"
+    },
+    {
+      "id": 2,
+      "body": "नफरत इंसान को अंदर से खोखला कर देती है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "hate"
+    },
+    {
+      "id": 3,
+      "body": "सपनों को पंख दो, उड़ान खुद ही भर जाएगी।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "motivation"
+    },
+    {
+      "id": 4,
+      "body": "हँसी वो दवा है जो दिल को राहत देती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "happiness"
+    },
+    {
+      "id": 5,
+      "body": "ग़म वो ताज है जो हर किसी को नहीं मिलता।",
+      "author": "Rahim",
+      "language": "hindi",
+      "emotion": "sadness"
+    },
+    {
+      "id": 6,
+      "body": "गुस्सा वही है जो अपनों से जुदा कर दे।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "anger"
+    },
+    {
+      "id": 7,
+      "body": "डर को अगर दोस्त बना लो तो दुश्मन कम होंगे।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "fear"
+    },
+    {
+      "id": 8,
+      "body": "घृणा की बू सबसे जल्दी फैलती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "disgust"
+    },
+    {
+      "id": 9,
+      "body": "कभी-कभी ज़िन्दगी चौंका भी देती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "surprise"
+    },
+    {
+      "id": 10,
+      "body": "खुशी बाँटने से बढ़ती है, छुपाने से नहीं।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "joy"
+    },
+    {
+      "id": 11,
+      "body": "इश्क़ में डूबा दिल सब कुछ भूल जाता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "love"
+    },
+    {
+      "id": 12,
+      "body": "उत्साह से बड़ा कोई साथी नहीं।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "excitement"
+    },
+    {
+      "id": 13,
+      "body": "संतोष ही असली सुख है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "contentment"
+    },
+    {
+      "id": 14,
+      "body": "राहत मिलती है जब बोझ उतरता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "relief"
+    },
+    {
+      "id": 15,
+      "body": "उम्मीद हमेशा कुछ अच्छा लेकर आती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "anticipation"
+    },
+    {
+      "id": 16,
+      "body": "गर्व सही दिशा में हो तो प्रेरणा बनता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "pride"
+    },
+    {
+      "id": 17,
+      "body": "शर्म कभी-कभी सबक सिखा देती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "shame"
+    },
+    {
+      "id": 18,
+      "body": "पछतावा उस वक्त सबसे ज्यादा सालता है जब सुधरने का वक्त नहीं रहता।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "guilt"
+    },
+    {
+      "id": 19,
+      "body": "शर्मिंदगी से भी इंसान मजबूत होता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "embarrassment"
+    },
+    {
+      "id": 20,
+      "body": "ईर्ष्या वो जहर है जो खुद को ही खा जाता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "envy"
+    },
+    {
+      "id": 21,
+      "body": "जलन उसी से होती है जिसमें कुछ कर गुजरने की आग हो।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "jealousy"
+    },
+    {
+      "id": 22,
+      "body": "दूसरों के दर्द में ही इंसानियत नजर आती है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "sympathy"
+    },
+    {
+      "id": 23,
+      "body": "सच्चा इंसान वही है जो औरों का दर्द महसूस करे।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "empathy"
+    },
+    {
+      "id": 24,
+      "body": "दया वो हथियार है जो दिलों को जोड़ता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "compassion"
+    },
+    {
+      "id": 25,
+      "body": "कृतज्ञता दिल को हल्का कर देती है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "gratitude"
+    },
+    {
+      "id": 26,
+      "body": "तन्हाई वो सजा है जो अक्सर अपने ही देते हैं।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "loneliness"
+    },
+    {
+      "id": 27,
+      "body": "बोरियत को तोड़ो, कुछ नया सीखो।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "boredom"
+    },
+    {
+      "id": 28,
+      "body": "झुंझलाहट अक्सर उम्मीद से होती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "frustration"
+    },
+    {
+      "id": 29,
+      "body": "चिंता वही है जो चैन छीन ले।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "anxiety"
+    },
+    {
+      "id": 30,
+      "body": "विस्मय में ही सच्ची सुंदरता छुपी है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "awe"
+    },
+    {
+      "id": 31,
+      "body": "आशा ही है जो जीने की वजह देती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "hope"
+    },
+    {
+      "id": 32,
+      "body": "निराशा वो कुआँ है जिसमें उतरना आसान है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "despair"
+    },
+    {
+      "id": 33,
+      "body": "कड़वाहट दिल को बंजर बना देती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "resentment"
+    },
+    {
+      "id": 34,
+      "body": "अफसोस हमेशा पीछे खींचता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "regret"
+    },
+    {
+      "id": 35,
+      "body": "पुरानी यादें मीठी भी हैं, चुभती भी हैं।",
+      "author": "Rahim",
+      "language": "hindi",
+      "emotion": "nostalgia"
+    },
+    {
+      "id": 36,
+      "body": "घृणा से बड़ा कोई जहर नहीं।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "contempt"
+    },
+    {
+      "id": 37,
+      "body": "भरोसा वो रिश्ता है जो टूटे तो सब बिखर जाता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "trust"
+    },
+    {
+      "id": 38,
+      "body": "प्रशंसा से आत्मा खिल उठती है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "admiration"
+    },
+    {
+      "id": 39,
+      "body": "उलझन में ही नए रास्ते निकलते हैं।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "confusion"
+    },
+    {
+      "id": 40,
+      "body": "साहस डर को भी दोस्त बना देता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "courage"
+    },
+    {
+      "id": 41,
+      "body": "कमज़ोरी को स्वीकार करना ही ताक़त है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "vulnerability"
+    },
+    {
+      "id": 42,
+      "body": "परमानंद वही है जो भीतर से उपजे।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "euphoria"
+    },
+    {
+      "id": 43,
+      "body": "परम सुख का अनुभव शब्दों में नहीं बंधता।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "ecstasy"
+    },
+    {
+      "id": 44,
+      "body": "परम आनंद में ही जीवन का सार है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "bliss"
+    },
+    {
+      "id": 45,
+      "body": "मुस्कान वो तोहफ़ा है जो सबको खुश कर देता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "amusement"
+    },
+    {
+      "id": 46,
+      "body": "शरारत से भरा दिल कभी बूढ़ा नहीं होता।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "playfulness"
+    },
+    {
+      "id": 47,
+      "body": "आनंद को पकड़ो मत, जी लो।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "delight"
+    },
+    {
+      "id": 48,
+      "body": "मोहब्बत में अपनापन सबसे खूबसूरत होता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "fondness"
+    },
+    {
+      "id": 49,
+      "body": "पूजा में नहीं, स्नेह में ईश्वर बसता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "adoration"
+    },
+    {
+      "id": 50,
+      "body": "पहली नजर का दीवानापन कभी भूलता नहीं।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "infatuation"
+    },
+    {
+      "id": 51,
+      "body": "जुनून वो आग है जो सब जला देता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "passion"
+    },
+    {
+      "id": 52,
+      "body": "तरसना भी एक मोहब्बत है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "longing"
+    },
+    {
+      "id": 53,
+      "body": "कभी-कभी दिल को बस तड़पना ही अच्छा लगता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "yearning"
+    },
+    {
+      "id": 54,
+      "body": "विरह में ही प्रेम का असली स्वाद है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "mourning"
+    },
+    {
+      "id": 55,
+      "body": "शोक वो खामोशी है जो सब बयां कर देती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "grief"
+    },
+    {
+      "id": 56,
+      "body": "उदासी वो चादर है जिसमें यादें लिपट जाती हैं।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "melancholy"
+    },
+    {
+      "id": 57,
+      "body": "निराशा तब खतरनाक होती है जब उम्मीद मर जाए।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "despondency"
+    },
+    {
+      "id": 58,
+      "body": "नाउम्मीदी में ही सब कुछ खो जाता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "hopelessness"
+    },
+    {
+      "id": 59,
+      "body": "डरावनी कल्पनाएँ हमें अंदर से तोड़ देती हैं।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "dread"
+    },
+    {
+      "id": 60,
+      "body": "कभी-कभी भय हमें जकड़ लेता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "terror"
+    },
+    {
+      "id": 61,
+      "body": "भयभीत मन हर आवाज़ से चौंक जाता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "horror"
+    },
+    {
+      "id": 62,
+      "body": "सावधानी ही सबसे बड़ा अलार्म है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "alarm"
+    },
+    {
+      "id": 63,
+      "body": "अचानक की हलचल दिल को दहला देती है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "startled"
+    },
+    {
+      "id": 64,
+      "body": "आशंका ही सच्चाई को डरावना बनाती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "apprehension"
+    },
+    {
+      "id": 65,
+      "body": "शक वो दीमक है जो भरोसे को खा जाता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "suspicion"
+    },
+    {
+      "id": 66,
+      "body": "अविश्वास का जहर बहुत खतरनाक है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "distrust"
+    },
+    {
+      "id": 67,
+      "body": "निराशा तब बढ़ती है जब उम्मीद टूटती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "disappointment"
+    },
+    {
+      "id": 68,
+      "body": "भ्रम टूटे तो दुनिया नंगी नजर आती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "disillusionment"
+    },
+    {
+      "id": 69,
+      "body": "घृणा में तिरस्कार की गंध होती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "disdain"
+    },
+    {
+      "id": 70,
+      "body": "अस्वीकृति दिल को बहुत चुभती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "disapproval"
+    },
+    {
+      "id": 71,
+      "body": "असंतोष अंदर ही अंदर जलाता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "displeasure"
+    },
+    {
+      "id": 72,
+      "body": "चिढ़ छोटी बातों को बड़ा बना देती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "irritation"
+    },
+    {
+      "id": 73,
+      "body": "झल्लाहट से रिश्ते भी टूट जाते हैं।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "annoyance"
+    },
+    {
+      "id": 74,
+      "body": "उतेजना कभी सही नहीं होती।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "agitation"
+    },
+    {
+      "id": 75,
+      "body": "आक्रोश सही दिशा में हो तो बदलाव लाता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "outrage"
+    },
+    {
+      "id": 76,
+      "body": "क्रोध जब हद से बढ़ जाए तो उग्रता बन जाता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "fury"
+    },
+    {
+      "id": 77,
+      "body": "गुस्सा जब आग बने तो सब जलाता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "rage"
+    },
+    {
+      "id": 78,
+      "body": "बदले की आग हर चीज़ को राख कर देती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "vindictiveness"
+    },
+    {
+      "id": 79,
+      "body": "कड़वाहट मन को जहर पिला देती है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "bitterness"
+    },
+    {
+      "id": 80,
+      "body": "पछतावा वो आग है जो अंदर ही अंदर जलाती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "remorse"
+    },
+    {
+      "id": 81,
+      "body": "खुद पर दया करना सबसे बड़ा दुख है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "self-pity"
+    },
+    {
+      "id": 82,
+      "body": "दया देना आसान है, सहना मुश्किल।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "pity"
+    },
+    {
+      "id": 83,
+      "body": "चिंता वो जाल है जिसमें मन फँसता जाता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "worry"
+    },
+    {
+      "id": 84,
+      "body": "घबराहट उस अंधेरे जैसी है जो खुद से लड़ाता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "nervousness"
+    },
+    {
+      "id": 85,
+      "body": "असुरक्षा दिल में डर बो देती है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "insecurity"
+    },
+    {
+      "id": 86,
+      "body": "संदेह मन को खोखला कर देता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "doubt"
+    },
+    {
+      "id": 87,
+      "body": "उलझनें रास्ता भी दिखाती हैं।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "bewilderment"
+    },
+    {
+      "id": 88,
+      "body": "मन जब बंट जाए तो फैसले कठिन हो जाते हैं।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "conflicted"
+    },
+    {
+      "id": 89,
+      "body": "कभी-कभी हार मान लेना भी जरूरी है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "resignation"
+    },
+    {
+      "id": 90,
+      "body": "स्वीकार करना ही सच्ची राहत देता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "acceptance"
+    },
+    {
+      "id": 91,
+      "body": "शांति भीतर ही खिलती है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "serenity"
+    },
+    {
+      "id": 92,
+      "body": "मन की शांति सबसे बड़ा धन है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "peacefulness"
+    },
+    {
+      "id": 93,
+      "body": "संतोष में ही सच्चा सुख है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "satisfaction"
+    },
+    {
+      "id": 94,
+      "body": "पूर्णता में अधूरापन भी सुंदर होता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "fulfillment"
+    },
+    {
+      "id": 95,
+      "body": "प्रेरणा ही जीवन का ईंधन है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "inspiration"
+    },
+    {
+      "id": 96,
+      "body": "प्रेरणा को क्रिया में बदलना ही उद्देश्य है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "motivation"
+    },
+    {
+      "id": 97,
+      "body": "दृढ़ निश्चय पत्थर को भी तोड़ देता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "determination"
+    },
+    {
+      "id": 98,
+      "body": "संकल्प में ही शक्ति है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "resolve"
+    },
+    {
+      "id": 99,
+      "body": "उत्साह वो शक्ति है जो हारा नहीं मानता।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "zeal"
+    },
+    {
+      "id": 100,
+      "body": "आत्मविश्वास हर मुश्किल को आसान बना देता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "confidence"
+    },
+    {
+      "id": 101,
+      "body": "विजय वही है जो अंत तक लड़ी जाए।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "triumph"
+    },
+    {
+      "id": 102,
+      "body": "जीत की खुशी अद्भुत होती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "elation"
+    },
+    {
+      "id": 103,
+      "body": "राहत कभी-कभी सबसे बड़ा इनाम है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "relief"
+    },
+    {
+      "id": 104,
+      "body": "संतुष्टि वो मिठास है जो आत्मा को मिलती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "gratification"
+    },
+    {
+      "id": 105,
+      "body": "विस्मय में ही सच्ची भक्ति छुपी है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "awe"
+    },
+    {
+      "id": 106,
+      "body": "श्रद्धा में ही आस्था खिलती है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "reverence"
+    },
+    {
+      "id": 107,
+      "body": "कभी-कभी आश्चर्य हमें नया इंसान बना देता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "wonder"
+    },
+    {
+      "id": 108,
+      "body": "जिज्ञासा ही ज्ञान का पहला कदम है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "curiosity"
+    },
+    {
+      "id": 109,
+      "body": "रहस्य जीवन को रोचक बनाता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "intrigue"
+    },
+    {
+      "id": 110,
+      "body": "आकर्षण ही सब कुछ खींचता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "fascination"
+    },
+    {
+      "id": 111,
+      "body": "शंका रखना ही समझदारी है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "skepticism"
+    },
+    {
+      "id": 112,
+      "body": "कभी-कभी नास्तिकता में ही ज्ञान छुपा होता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "cynicism"
+    },
+    {
+      "id": 113,
+      "body": "अलगाव सबसे गहरा दर्द होता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "alienation"
+    },
+    {
+      "id": 114,
+      "body": "अलग रहना ही कभी-कभी बचाव होता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "detachment"
+    },
+    {
+      "id": 115,
+      "body": "उदासीनता दिल को पथरा देती है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "indifference"
+    },
+    {
+      "id": 116,
+      "body": "अकेलापन ही सबसे बड़ा साथी बन जाता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "isolation"
+    },
+    {
+      "id": 117,
+      "body": "ठुकराया हुआ मन फिर से भरोसा नहीं करता।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "rejection"
+    },
+    {
+      "id": 118,
+      "body": "अपमान शब्दों से नहीं, नज़रों से होता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "humiliation"
+    },
+    {
+      "id": 119,
+      "body": "लज्जा आँखों में सबसे पहले झलकती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "mortification"
+    },
+    {
+      "id": 120,
+      "body": "कृतज्ञता वो दीपक है जो मन को रोशन करता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "gratefulness"
+    },
+    {
+      "id": 121,
+      "body": "धन्यवाद कहना छोटा काम है, असर बड़ा होता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "thankfulness"
+    },
+    {
+      "id": 122,
+      "body": "दरियादिली दिल को और बड़ा बनाती है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "generosity"
+    },
+    {
+      "id": 123,
+      "body": "भलाई का काम लौटकर सुकून देता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "benevolence"
+    },
+    {
+      "id": 124,
+      "body": "निस्वार्थ सेवा में ही सच्चा सुख है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "altruism"
+    },
+    {
+      "id": 125,
+      "body": "समर्पण में ही प्रेम की गहराई है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "devotion"
+    },
+    {
+      "id": 126,
+      "body": "मुलायमियत दिल को छू जाती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "tenderness"
+    },
+    {
+      "id": 127,
+      "body": "गरमजोशी रिश्तों को जीवित रखती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "warmth"
+    },
+    {
+      "id": 128,
+      "body": "ईर्ष्या में आत्मघात छुपा होता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "envy"
+    },
+    {
+      "id": 129,
+      "body": "जलन आत्मा को कमजोर कर देती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "jealousy"
+    },
+    {
+      "id": 130,
+      "body": "सहानुभूति हर घाव भर देती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "sympathy"
+    },
+    {
+      "id": 131,
+      "body": "हमदर्दी किसी का सहारा बन जाती है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "empathy"
+    },
+    {
+      "id": 132,
+      "body": "करुणा में ही इंसानियत बसती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "compassion"
+    },
+    {
+      "id": 133,
+      "body": "तन्हाई बहुत कुछ सिखा देती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "loneliness"
+    },
+    {
+      "id": 134,
+      "body": "उबाऊपन से बचना भी एक कला है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "boredom"
+    },
+    {
+      "id": 135,
+      "body": "हताशा ही क्रांति की जननी है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "frustration"
+    },
+    {
+      "id": 136,
+      "body": "चिंता को मन से निकालो, रास्ते खुद मिलेंगे।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "anxiety"
+    },
+    {
+      "id": 137,
+      "body": "श्रद्धा में विस्मय का अनुभव छुपा है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "awe"
+    },
+    {
+      "id": 138,
+      "body": "आशा की किरण सब बदल देती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "hope"
+    },
+    {
+      "id": 139,
+      "body": "निराशा वो अंधेरा है जो सब निगल जाता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "despair"
+    },
+    {
+      "id": 140,
+      "body": "कड़वाहट दिल में जहर घोल देती है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "resentment"
+    },
+    {
+      "id": 141,
+      "body": "पछतावे में बीते पल वापस नहीं आते।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "regret"
+    },
+    {
+      "id": 142,
+      "body": "स्मृतियाँ बीते कल की महक हैं।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "nostalgia"
+    },
+    {
+      "id": 143,
+      "body": "घृणा दिल को सख्त कर देती है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "contempt"
+    },
+    {
+      "id": 144,
+      "body": "विश्वास से ही दुनिया चलती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "trust"
+    },
+    {
+      "id": 145,
+      "body": "प्रशंसा से मन खिल उठता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "admiration"
+    },
+    {
+      "id": 146,
+      "body": "उलझनें सुलझाने में ही जीवन है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "confusion"
+    },
+    {
+      "id": 147,
+      "body": "साहस डर को हराकर जन्म लेता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "courage"
+    },
+    {
+      "id": 148,
+      "body": "कमज़ोरी में ही सबसे ज्यादा शक्ति छुपी है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "vulnerability"
+    },
+    {
+      "id": 149,
+      "body": "उल्लास जीवन को रंगीन बना देता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "euphoria"
+    },
+    {
+      "id": 150,
+      "body": "परमानंद में हर ग़म घुल जाता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "ecstasy"
+    },
+    {
+      "id": 151,
+      "body": "परम सुख वही जो आत्मा को मिले।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "bliss"
+    },
+    {
+      "id": 152,
+      "body": "मनोरंजन में भी सीख छुपी होती है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "amusement"
+    },
+    {
+      "id": 153,
+      "body": "खिलखिलाहट से दिल हल्का हो जाता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "playfulness"
+    },
+    {
+      "id": 154,
+      "body": "प्रसन्नता में ही जीवन की जान है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "delight"
+    },
+    {
+      "id": 155,
+      "body": "मोह में आत्मा बंध जाती है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "fondness"
+    },
+    {
+      "id": 156,
+      "body": "आदर में प्रेम की छाया होती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "adoration"
+    },
+    {
+      "id": 157,
+      "body": "मोहब्बत जब जूनून बन जाए तो इश्क़ होता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "infatuation"
+    },
+    {
+      "id": 158,
+      "body": "जुनून में ही इश्क़ का रंग गहरा होता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "passion"
+    },
+    {
+      "id": 159,
+      "body": "तरसती नजरें हर वक्त इंतजार करती हैं।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "longing"
+    },
+    {
+      "id": 160,
+      "body": "तड़प में ही सच्चा इश्क़ जिंदा रहता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "yearning"
+    },
+    {
+      "id": 161,
+      "body": "वियोग में ही प्रेम की गहराई महसूस होती है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "mourning"
+    },
+    {
+      "id": 162,
+      "body": "शोक हर दिल में अलग रूप से बसता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "grief"
+    },
+    {
+      "id": 163,
+      "body": "उदासी से मन शांत होता है, पर भारी भी।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "melancholy"
+    },
+    {
+      "id": 164,
+      "body": "निराशा में भी उम्मीद की किरण खोजनी चाहिए।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "despondency"
+    },
+    {
+      "id": 165,
+      "body": "निराशा से बाहर निकलने का नाम ही ज़िंदगी है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "hopelessness"
+    },
+    {
+      "id": 166,
+      "body": "डर भीतर की आवाज़ को दबा देता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "dread"
+    },
+    {
+      "id": 167,
+      "body": "आतंक डर से भी बड़ा होता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "terror"
+    },
+    {
+      "id": 168,
+      "body": "भयावहता मन को जड़ बना देती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "horror"
+    },
+    {
+      "id": 169,
+      "body": "चौंक जाना भी जरूरी है, तभी सतर्कता आती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "alarm"
+    },
+    {
+      "id": 170,
+      "body": "हड़बड़ाहट में अक्ल गायब हो जाती है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "startled"
+    },
+    {
+      "id": 171,
+      "body": "शंका रिश्तों को कच्चा बना देती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "apprehension"
+    },
+    {
+      "id": 172,
+      "body": "संदेह विश्वास की जड़ काट देता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "suspicion"
+    },
+    {
+      "id": 173,
+      "body": "अविश्वास में रिश्ते बिखर जाते हैं।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "distrust"
+    },
+    {
+      "id": 174,
+      "body": "निराशा अक्सर उम्मीद का गला घोंट देती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "disappointment"
+    },
+    {
+      "id": 175,
+      "body": "मायूसी में सच्चाई छुपी होती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "disillusionment"
+    },
+    {
+      "id": 176,
+      "body": "तिरस्कार से घृणा का जन्म होता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "disdain"
+    },
+    {
+      "id": 177,
+      "body": "अस्वीकृति दिल को बहुत चोट देती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "disapproval"
+    },
+    {
+      "id": 178,
+      "body": "नाराज़गी दिल में बोझ बन जाती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "displeasure"
+    },
+    {
+      "id": 179,
+      "body": "चिड़चिड़ापन छोटी बातों को बड़ा बना देता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "irritation"
+    },
+    {
+      "id": 180,
+      "body": "झल्लाहट में गलत फैसले हो जाते हैं।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "annoyance"
+    },
+    {
+      "id": 181,
+      "body": "अशांति मन को विचलित कर देती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "agitation"
+    },
+    {
+      "id": 182,
+      "body": "आक्रोश जब नियंत्रण से बाहर हो जाए तो बर्बादी तय है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "outrage"
+    },
+    {
+      "id": 183,
+      "body": "क्रोध हीनता को ताकत देता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "fury"
+    },
+    {
+      "id": 184,
+      "body": "गुस्सा इंसान को अंधा कर देता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "rage"
+    },
+    {
+      "id": 185,
+      "body": "प्रतिशोध में इंसान खुद को ही खो देता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "vindictiveness"
+    },
+    {
+      "id": 186,
+      "body": "कड़वाहट हमेशा भीतर ही भीतर सड़ाती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "bitterness"
+    },
+    {
+      "id": 187,
+      "body": "पश्चाताप से ही आत्मा को राहत मिलती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "remorse"
+    },
+    {
+      "id": 188,
+      "body": "दूसरों पर दया से पहले खुद पर दया करो।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "self-pity"
+    },
+    {
+      "id": 189,
+      "body": "दया में ही मानवता का सार छुपा है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "pity"
+    },
+    {
+      "id": 190,
+      "body": "चिंता भविष्य को खोखला कर देती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "worry"
+    },
+    {
+      "id": 191,
+      "body": "घबराहट में सही राह दिखती नहीं।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "nervousness"
+    },
+    {
+      "id": 192,
+      "body": "असुरक्षा आत्मविश्वास को जकड़ लेती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "insecurity"
+    },
+    {
+      "id": 193,
+      "body": "शंका ज्ञान का सबसे बड़ा शत्रु है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "doubt"
+    },
+    {
+      "id": 194,
+      "body": "भ्रम में ही सबसे बड़ी उलझन छुपी है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "bewilderment"
+    },
+    {
+      "id": 195,
+      "body": "दुविधा से बाहर निकलना ही आगे बढ़ना है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "conflicted"
+    },
+    {
+      "id": 196,
+      "body": "स्वीकार करना भी एक शक्ति है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "resignation"
+    },
+    {
+      "id": 197,
+      "body": "स्वीकारोक्ति मन को हल्का करती है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "acceptance"
+    },
+    {
+      "id": 198,
+      "body": "शांति ही सच्ची शक्ति है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "serenity"
+    },
+    {
+      "id": 199,
+      "body": "मन का सुकून ही असली धन है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "peacefulness"
+    },
+    {
+      "id": 200,
+      "body": "तृप्ति में ही जीवन का सार छुपा है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "satisfaction"
+    },
+    {
+      "id": 201,
+      "body": "पूर्णता में ही आत्मा को संतोष मिलता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "fulfillment"
+    },
+    {
+      "id": 202,
+      "body": "प्रेरणा ही हर सफलता की पहली सीढ़ी है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "inspiration"
+    },
+    {
+      "id": 203,
+      "body": "प्रेरणा से ही दिशा मिलती है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "motivation"
+    },
+    {
+      "id": 204,
+      "body": "दृढ़ निश्चय पत्थर को भी काट देता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "determination"
+    },
+    {
+      "id": 205,
+      "body": "संकल्प में ही शक्ति है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "resolve"
+    },
+    {
+      "id": 206,
+      "body": "उत्साह ही जीवन का रंग है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "zeal"
+    },
+    {
+      "id": 207,
+      "body": "आत्मविश्वास से ही असंभव संभव होता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "confidence"
+    },
+    {
+      "id": 208,
+      "body": "विजय में परिश्रम छुपा होता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "triumph"
+    },
+    {
+      "id": 209,
+      "body": "प्रसन्नता में जीत की झलक मिलती है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "elation"
+    },
+    {
+      "id": 210,
+      "body": "राहत में जीवन की मिठास छुपी है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "relief"
+    },
+    {
+      "id": 211,
+      "body": "संतोष ही असली तृप्ति है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "gratification"
+    },
+    {
+      "id": 212,
+      "body": "विस्मय में सृष्टि का सौंदर्य छुपा है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "awe"
+    },
+    {
+      "id": 213,
+      "body": "श्रद्धा में मन को शांति मिलती है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "reverence"
+    },
+    {
+      "id": 214,
+      "body": "आश्चर्य से ज्ञान का द्वार खुलता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "wonder"
+    },
+    {
+      "id": 215,
+      "body": "जिज्ञासा से ही खोज संभव है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "curiosity"
+    },
+    {
+      "id": 216,
+      "body": "रहस्य में सृजन छुपा होता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "intrigue"
+    },
+    {
+      "id": 217,
+      "body": "मोह से fascination जन्म लेता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "fascination"
+    },
+    {
+      "id": 218,
+      "body": "संशय हर विश्वास को कमजोर कर देता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "skepticism"
+    },
+    {
+      "id": 219,
+      "body": "निंदक को घर में रखना चाहिए।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "cynicism"
+    },
+    {
+      "id": 220,
+      "body": "अलगाव से खुद को जानना आसान होता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "alienation"
+    },
+    {
+      "id": 221,
+      "body": "विरक्त रहना भी एक कला है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "detachment"
+    },
+    {
+      "id": 222,
+      "body": "उदासीनता भावनाओं को मुरझा देती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "indifference"
+    },
+    {
+      "id": 223,
+      "body": "एकांत में आत्मा का संवाद होता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "isolation"
+    },
+    {
+      "id": 224,
+      "body": "अस्वीकृति सबसे गहरी चोट होती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "rejection"
+    },
+    {
+      "id": 225,
+      "body": "अपमान आत्मा को भीतर से तोड़ता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "humiliation"
+    },
+    {
+      "id": 226,
+      "body": "गहरा अपमान ताउम्र याद रहता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "mortification"
+    },
+    {
+      "id": 227,
+      "body": "कृतज्ञता में ही जीवन का रस है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "gratefulness"
+    },
+    {
+      "id": 228,
+      "body": "धन्यवाद कहना भी एक संस्कार है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "thankfulness"
+    },
+    {
+      "id": 229,
+      "body": "दानी बनने से दिल बड़ा होता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "generosity"
+    },
+    {
+      "id": 230,
+      "body": "परोपकार ही असली धर्म है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "benevolence"
+    },
+    {
+      "id": 231,
+      "body": "निःस्वार्थ सेवा से आत्मा धन्य होती है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "altruism"
+    },
+    {
+      "id": 232,
+      "body": "समर्पण से प्रेम खिलता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "devotion"
+    },
+    {
+      "id": 233,
+      "body": "मुलायमियत ही रिश्तों की मिठास है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "tenderness"
+    },
+    {
+      "id": 234,
+      "body": "ममता में ही गर्माहट छुपी है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "warmth"
+    },
+    {
+      "id": 235,
+      "body": "एकाकीपन में ही खुद से मुलाकात होती है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "loneliness"
+    },
+    {
+      "id": 236,
+      "body": "उबाऊपन से ही सृजन की भूख लगती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "boredom"
+    },
+    {
+      "id": 237,
+      "body": "हताशा से नया रास्ता बनता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "frustration"
+    },
+    {
+      "id": 238,
+      "body": "चिंता छोड़ने में ही सुख है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "anxiety"
+    },
+    {
+      "id": 239,
+      "body": "विस्मय से ही श्रद्धा जन्म लेती है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "awe"
+    },
+    {
+      "id": 240,
+      "body": "आशा से ही नया सवेरा आता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "hope"
+    },
+    {
+      "id": 241,
+      "body": "नाउम्मीदी भी उम्मीद का द्वार खोलती है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "despair"
+    },
+    {
+      "id": 242,
+      "body": "क्षोभ से ही बदलाव आता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "resentment"
+    },
+    {
+      "id": 243,
+      "body": "अफसोस में सीख छुपी होती है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "regret"
+    },
+    {
+      "id": 244,
+      "body": "बीते पलों में मिठास होती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "nostalgia"
+    },
+    {
+      "id": 245,
+      "body": "तिरस्कार से प्रेम मर जाता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "contempt"
+    },
+    {
+      "id": 246,
+      "body": "विश्वास से ही रिश्ते मजबूत होते हैं।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "trust"
+    },
+    {
+      "id": 247,
+      "body": "प्रशंसा में ही प्रेरणा छुपी है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "admiration"
+    },
+    {
+      "id": 248,
+      "body": "उलझन में ही राह निकलती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "confusion"
+    },
+    {
+      "id": 249,
+      "body": "साहस में ही विजय का बीज होता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "courage"
+    },
+    {
+      "id": 250,
+      "body": "असुरक्षा को खुलापन जीतता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "vulnerability"
+    },
+    {
+      "id": 251,
+      "body": "परमानंद में ही मोक्ष का स्वाद है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "euphoria"
+    },
+    {
+      "id": 252,
+      "body": "परमानंद से ही आत्मा को राहत मिलती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "ecstasy"
+    },
+    {
+      "id": 253,
+      "body": "आनंद ही जीवन की असली मुस्कान है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "bliss"
+    },
+    {
+      "id": 254,
+      "body": "मनोरंजन से ही थकान दूर होती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "amusement"
+    },
+    {
+      "id": 255,
+      "body": "शरारत से ही रिश्तों में मिठास रहती है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "playfulness"
+    },
+    {
+      "id": 256,
+      "body": "मोहकता में आकर्षण छुपा होता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "delight"
+    },
+    {
+      "id": 257,
+      "body": "स्नेह में ही अपनापन बसता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "fondness"
+    },
+    {
+      "id": 258,
+      "body": "आराधना में आत्मा पवित्र होती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "adoration"
+    },
+    {
+      "id": 259,
+      "body": "मुग्धता में प्रेम का रंग गहरा होता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "infatuation"
+    },
+    {
+      "id": 260,
+      "body": "जुनून ही सबसे बड़ा गुरु है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "passion"
+    },
+     {
+      "id": 261,
+      "body": "तड़प में ही चाहत की गहराई होती है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "longing"
+    },
+    {
+      "id": 262,
+      "body": "तरस में ही ख्वाहिशें पलती हैं।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "yearning"
+    },
+    {
+      "id": 263,
+      "body": "शोक में यादें ज़िंदा रहती हैं।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "mourning"
+    },
+    {
+      "id": 264,
+      "body": "वियोग में भी प्रेम की झलक होती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "grief"
+    },
+    {
+      "id": 265,
+      "body": "उदासी में ही दिल की आवाज़ सुनाई देती है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "melancholy"
+    },
+    {
+      "id": 266,
+      "body": "हताशा में भी उम्मीद छुपी रहती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "despondency"
+    },
+    {
+      "id": 267,
+      "body": "नाउम्मीदी सबसे बड़ा डर है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "hopelessness"
+    },
+    {
+      "id": 268,
+      "body": "डर में साहस जन्म लेता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "dread"
+    },
+    {
+      "id": 269,
+      "body": "आतंक आत्मा को कंपा देता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "terror"
+    },
+    {
+      "id": 270,
+      "body": "भयावहता में ही साहस की परीक्षा होती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "horror"
+    },
+    {
+      "id": 271,
+      "body": "चौंक जाने से सच सामने आता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "alarm"
+    },
+    {
+      "id": 272,
+      "body": "अचानक की हलचल से चेतना बढ़ती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "startled"
+    },
+    {
+      "id": 273,
+      "body": "अनिश्चितता में भय पलता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "apprehension"
+    },
+    {
+      "id": 274,
+      "body": "शक से ही सच्चाई उजागर होती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "suspicion"
+    },
+    {
+      "id": 275,
+      "body": "अविश्वास रिश्तों को तोड़ देता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "distrust"
+    },
+    {
+      "id": 276,
+      "body": "निराशा उम्मीद को झकझोर देती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "disappointment"
+    },
+    {
+      "id": 277,
+      "body": "मोहभंग में सच्चाई मिलती है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "disillusionment"
+    },
+    {
+      "id": 278,
+      "body": "घृणा से आत्मा विषाक्त होती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "disdain"
+    },
+    {
+      "id": 279,
+      "body": "नापसंदगी से दूरियां बढ़ती हैं।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "disapproval"
+    },
+    {
+      "id": 280,
+      "body": "असंतोष क्रांति की पहली चिंगारी है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "displeasure"
+    },
+    {
+      "id": 281,
+      "body": "झुंझलाहट में सब्र की परीक्षा होती है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "irritation"
+    },
+    {
+      "id": 282,
+      "body": "चिड़चिड़ापन मन को अशांत करता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "annoyance"
+    },
+    {
+      "id": 283,
+      "body": "व्याकुलता में ही हल तलाशना पड़ता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "agitation"
+    },
+    {
+      "id": 284,
+      "body": "क्रोध में विनाश छुपा होता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "outrage"
+    },
+    {
+      "id": 285,
+      "body": "प्रचंड क्रोध सब कुछ भस्म कर देता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "fury"
+    },
+    {
+      "id": 286,
+      "body": "क्रोध जब पागलपन बन जाए तो सब खत्म हो जाता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "rage"
+    },
+    {
+      "id": 287,
+      "body": "प्रतिशोध आत्मा को काला कर देता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "vindictiveness"
+    },
+    {
+      "id": 288,
+      "body": "कड़वाहट में रिश्ते टूट जाते हैं।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "bitterness"
+    },
+    {
+      "id": 289,
+      "body": "पश्चाताप आत्मा को हल्का कर देता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "remorse"
+    },
+    {
+      "id": 290,
+      "body": "आत्म-दया में कमजोरी छुपी है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "self-pity"
+    },
+    {
+      "id": 291,
+      "body": "दया दूसरों को संभालती है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "pity"
+    },
+    {
+      "id": 292,
+      "body": "चिंता जीवन को थका देती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "worry"
+    },
+    {
+      "id": 293,
+      "body": "घबराहट में ही हिम्मत दिखानी पड़ती है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "nervousness"
+    },
+    {
+      "id": 294,
+      "body": "असुरक्षा में ही साहस का जन्म होता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "insecurity"
+    },
+    {
+      "id": 295,
+      "body": "संदेह से सच्चाई की कड़ी मिलती है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "doubt"
+    },
+    {
+      "id": 296,
+      "body": "उलझन में ही समाधान मिलता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "bewilderment"
+    },
+    {
+      "id": 297,
+      "body": "दुविधा में ही सही दिशा चुननी होती है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "conflicted"
+    },
+    {
+      "id": 298,
+      "body": "स्वीकार करना ही सबसे बड़ी शक्ति है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "resignation"
+    },
+    {
+      "id": 299,
+      "body": "स्वीकृति से ही शांति मिलती है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "acceptance"
+    },
+    {
+      "id": 300,
+      "body": "शांति में ही जीवन बसता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "serenity"
+    },
+    {
+      "id": 301,
+      "body": "शांत मन में ही सुकून छुपा होता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "peacefulness"
+    },
+    {
+      "id": 302,
+      "body": "संतोष से आत्मा तृप्त होती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "satisfaction"
+    },
+    {
+      "id": 303,
+      "body": "पूर्ति में ही जीवन का सार है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "fulfillment"
+    },
+    {
+      "id": 304,
+      "body": "प्रेरणा ही चेतना का प्रकाश है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "inspiration"
+    },
+    {
+      "id": 305,
+      "body": "प्रेरणा से ही राह बनती है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "motivation"
+    },
+    {
+      "id": 306,
+      "body": "दृढ़ता में ही विजय छुपी है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "determination"
+    },
+    {
+      "id": 307,
+      "body": "संकल्प शक्ति को जन्म देती है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "resolve"
+    },
+    {
+      "id": 308,
+      "body": "उत्साह ही जीवन का मूल मंत्र है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "zeal"
+    },
+    {
+      "id": 309,
+      "body": "आत्मविश्वास से ही ऊँचाईयां मिलती हैं।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "confidence"
+    },
+    {
+      "id": 310,
+      "body": "विजय में ही परिश्रम की गंध होती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "triumph"
+    },
+    {
+      "id": 311,
+      "body": "विजय का उत्सव मन में खुशी भर देता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "elation"
+    },
+    {
+      "id": 312,
+      "body": "राहत से ही मन को ठंडक मिलती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "relief"
+    },
+    {
+      "id": 313,
+      "body": "तृप्ति में ही आत्मा का ठिकाना है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "gratification"
+    },
+    {
+      "id": 314,
+      "body": "विस्मय में ही भक्ति का आरंभ है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "awe"
+    },
+    {
+      "id": 315,
+      "body": "श्रद्धा में ही विश्वास बसता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "reverence"
+    },
+    {
+      "id": 316,
+      "body": "आश्चर्य में ही प्रश्न छुपा होता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "wonder"
+    },
+    {
+      "id": 317,
+      "body": "जिज्ञासा ही ज्ञान की जननी है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "curiosity"
+    },
+    {
+      "id": 318,
+      "body": "रहस्य में ही खोज की शुरुआत होती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "intrigue"
+    },
+    {
+      "id": 319,
+      "body": "मोहकता से ही fascination बनता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "fascination"
+    },
+    {
+      "id": 320,
+      "body": "संशय से ही विश्वास मजबूत होता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "skepticism"
+    },
+    {
+      "id": 321,
+      "body": "निंदक नियरे राखिए, जो संशय जगाए।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "cynicism"
+    },
+    {
+      "id": 322,
+      "body": "अलगाव में ही आत्मा को आवाज़ मिलती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "alienation"
+    },
+    {
+      "id": 323,
+      "body": "विरक्ति से ही आत्मा निर्लिप्त होती है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "detachment"
+    },
+    {
+      "id": 324,
+      "body": "उदासीनता सबसे गहरी चुप्पी है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "indifference"
+    },
+    {
+      "id": 325,
+      "body": "अलगाव भी कभी-कभी सुकून देता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "isolation"
+    },
+    {
+      "id": 326,
+      "body": "अस्वीकृति दिल को तोड़ देती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "rejection"
+    },
+    {
+      "id": 327,
+      "body": "अपमान आत्मा को घायल करता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "humiliation"
+    },
+    {
+      "id": 328,
+      "body": "लज्जा में ही इंसानियत छुपी होती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "mortification"
+    },
+    {
+      "id": 329,
+      "body": "कृतज्ञता दिल को विशाल बनाती है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "gratefulness"
+    },
+    {
+      "id": 330,
+      "body": "आभार में जीवन सुंदर बनता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "thankfulness"
+    },
+    {
+      "id": 331,
+      "body": "दरियादिली में ही इंसानियत बसती है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "generosity"
+    },
+    {
+      "id": 332,
+      "body": "उदारता से ही समाज मजबूत होता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "benevolence"
+    },
+    {
+      "id": 333,
+      "body": "निःस्वार्थ सेवा ही सच्चा धर्म है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "altruism"
+    },
+    {
+      "id": 334,
+      "body": "समर्पण में ही प्रेम की पूर्णता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "devotion"
+    },
+    {
+      "id": 335,
+      "body": "ममता से ही जीवन मधुर होता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "tenderness"
+    },
+    {
+      "id": 336,
+      "body": "ऊष्मा से ही दिल पिघलते हैं।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "warmth"
+    },
+    {
+      "id": 337,
+      "body": "विरह में प्रेम और गहरा होता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "longing"
+    },
+    {
+      "id": 338,
+      "body": "चाहत में इंतजार सुंदर होता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "yearning"
+    },
+    {
+      "id": 339,
+      "body": "विरह में ही प्रेम अमर होता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "mourning"
+    },
+    {
+      "id": 340,
+      "body": "शोक में आंसुओं से दिल हल्का होता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "grief"
+    },
+    {
+      "id": 341,
+      "body": "मलिनता में ही गहरी बातें छुपी होती हैं।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "melancholy"
+    },
+    {
+      "id": 342,
+      "body": "हताशा में उम्मीद की लौ जरूरी है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "despondency"
+    },
+    {
+      "id": 343,
+      "body": "निराशा सबसे बड़ा शत्रु है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "hopelessness"
+    },
+    {
+      "id": 344,
+      "body": "भयावह कल्पनाओं में साहस पनपता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "dread"
+    },
+    {
+      "id": 345,
+      "body": "आतंक से मजबूत दिल उभरता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "terror"
+    },
+    {
+      "id": 346,
+      "body": "भयावहता हिम्मत की कड़ी परीक्षा है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "horror"
+    },
+    {
+      "id": 347,
+      "body": "घबराहट में सही निर्णय कठिन होता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "alarm"
+    },
+    {
+      "id": 348,
+      "body": "चौंक जाना कभी सच्चाई दिखाता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "startled"
+    },
+    {
+      "id": 349,
+      "body": "शंका से ही विश्वास मजबूत होता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "apprehension"
+    },
+    {
+      "id": 350,
+      "body": "संदेह से सच निकाला जाता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "suspicion"
+    },
+    {
+      "id": 351,
+      "body": "अविश्वास से दूरी पनपती है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "distrust"
+    },
+    {
+      "id": 352,
+      "body": "निराशा से उम्मीद टूटती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "disappointment"
+    },
+    {
+      "id": 353,
+      "body": "मोहभंग से नई शुरुआत होती है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "disillusionment"
+    },
+    {
+      "id": 354,
+      "body": "घृणा से मन कड़वा हो जाता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "disdain"
+    },
+    {
+      "id": 355,
+      "body": "नापसंदगी रिश्ते तोड़ देती है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "disapproval"
+    },
+    {
+      "id": 356,
+      "body": "असंतोष क्रांति को जन्म देता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "displeasure"
+    },
+    {
+      "id": 357,
+      "body": "झुंझलाहट सब्र की कसौटी है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "irritation"
+    },
+    {
+      "id": 358,
+      "body": "चिड़चिड़ापन रिश्तों में दरार लाता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "annoyance"
+    },
+    {
+      "id": 359,
+      "body": "व्याकुलता समाधान खोजती है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "agitation"
+    },
+    {
+      "id": 360,
+      "body": "क्रोध आग की तरह सब जला देता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "outrage"
+    },
+    {
+      "id": 361,
+      "body": "गुस्सा संभालना हर किसी के बस की बात नहीं।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "fury"
+    },
+    {
+      "id": 362,
+      "body": "रौद्रता सब खत्म कर देती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "rage"
+    },
+    {
+      "id": 363,
+      "body": "प्रतिशोध मन को विषैला करता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "vindictiveness"
+    },
+    {
+      "id": 364,
+      "body": "कड़वाहट दिल को सड़ा देती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "bitterness"
+    },
+    {
+      "id": 365,
+      "body": "पश्चाताप आत्मा को हल्का करता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "remorse"
+    },
+    {
+      "id": 366,
+      "body": "आत्म-दया कमजोर बना देती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "self-pity"
+    },
+    {
+      "id": 367,
+      "body": "दया दूसरों को संभालती है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "pity"
+    },
+    {
+      "id": 368,
+      "body": "चिंता बर्बादी की जड़ है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "worry"
+    },
+    {
+      "id": 369,
+      "body": "घबराहट साहस की परीक्षा है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "nervousness"
+    },
+    {
+      "id": 370,
+      "body": "असुरक्षा में आत्मविश्वास पनपता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "insecurity"
+    },
+    {
+      "id": 371,
+      "body": "संदेह से सत्य उजागर होता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "doubt"
+    },
+    {
+      "id": 372,
+      "body": "उलझन में समाधान मिलता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "bewilderment"
+    },
+    {
+      "id": 373,
+      "body": "दुविधा में दिशा मिलती है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "conflicted"
+    },
+    {
+      "id": 374,
+      "body": "समर्पण में ही शांति है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "resignation"
+    },
+    {
+      "id": 375,
+      "body": "स्वीकार्यता से राहत मिलती है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "acceptance"
+    },
+    {
+      "id": 376,
+      "body": "शांति में ही संतोष है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "serenity"
+    },
+    {
+      "id": 377,
+      "body": "सुकून से दिल तृप्त होता है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "peacefulness"
+    },
+    {
+      "id": 378,
+      "body": "संतोष में आत्मा को विश्राम मिलता है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "satisfaction"
+    },
+    {
+      "id": 379,
+      "body": "पूर्ति में जीवन का सार है।",
+      "author": "Kabir",
+      "language": "hindi",
+      "emotion": "fulfillment"
+    },
+    {
+      "id": 380,
+      "body": "प्रेरणा ही राह दिखाती है।",
+      "author": "Unknown",
+      "language": "hindi",
+      "emotion": "inspiration"
+    }
+  
+  
+
+
+  
+
+
+  ]
+}

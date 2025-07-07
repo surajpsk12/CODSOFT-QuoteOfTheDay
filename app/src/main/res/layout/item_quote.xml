@@ -1,67 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="8dp"
-    app:cardCornerRadius="12dp"
-    app:cardElevation="6dp">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <LinearLayout
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:layout_margin="8dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp">
 
-        <TextView
-            android:id="@+id/tvBody"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Sample quote here"
-            android:textAppearance="?attr/textAppearanceBody1"
-            android:textStyle="italic"
-            android:textColor="?android:textColorPrimary" />
-
-        <TextView
-            android:id="@+id/tvAuthor"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="— Author"
-            android:textAppearance="?attr/textAppearanceCaption"
-            android:textColor="?android:textColorSecondary" />
-
-        <!-- Buttons Row -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="end"
-            android:layout_marginTop="12dp">
+            android:orientation="vertical"
+            android:padding="16dp">
 
-            <ImageButton
-                android:id="@+id/btnShare"
-                android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/tvBody"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@android:drawable/ic_menu_share"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:contentDescription="@string/share"
-                android:tint="?attr/colorOnSurface"
-                android:padding="8dp" />
+                android:text="Sample quote here"
+                android:textAppearance="?attr/textAppearanceBody1"
+                android:textStyle="italic"
+                android:textColor="?android:textColorPrimary" />
 
-            <ImageButton
-                android:id="@+id/btnDelete"
-                android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/tvAuthor"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:src="@android:drawable/ic_menu_delete"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:contentDescription="@string/delete"
-                android:tint="?attr/colorOnSurface"
-                android:padding="8dp" />
+                android:layout_marginTop="8dp"
+                android:text="— Author"
+                android:textAppearance="?attr/textAppearanceCaption"
+                android:textColor="?android:textColorSecondary" />
+
+            <!-- Buttons Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="end"
+                android:layout_marginTop="12dp">
+
+                <ImageButton
+                    android:id="@+id/btnShare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@android:drawable/ic_menu_share"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="@string/share"
+                    android:padding="8dp"
+                    app:tint="?attr/colorOnSurface" />
+
+                <ImageButton
+                    android:id="@+id/btnDelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:src="@android:drawable/ic_menu_delete"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="@string/delete"
+                    android:padding="8dp"
+                    app:tint="?attr/colorOnSurface" />
+
+            </LinearLayout>
 
         </LinearLayout>
 
-    </LinearLayout>
-
-</androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+</layout>
