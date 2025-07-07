@@ -7,7 +7,9 @@
 📂 Offline support with Room DB
 
 📥 Download the APK here:  
-https://drive.google.com/file/d/1vvb6DgqD1h-sWO6kxr1EWzgtvOZ_C2LZ/view?usp=sharing
+[https://drive.google.com/file/d/1vvb6DgqD1h-sWO6kxr1EWzgtvOZ_C2LZ/view?usp=sharing
+](https://drive.google.com/file/d/1otuOuMcPWPzISFAEBKeDbgbn9gnlbdn4/view?usp=sharing)
+
 
 Feedback welcome! 😊
 
