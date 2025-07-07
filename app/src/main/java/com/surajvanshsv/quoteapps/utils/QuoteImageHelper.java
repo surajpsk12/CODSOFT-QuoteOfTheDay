@@ -37,6 +37,7 @@ public class QuoteImageHelper {
         int width = 1080;
         int height = 1920;
 
+
         Bitmap background = null;
         boolean isDark = true; // fallback
 
